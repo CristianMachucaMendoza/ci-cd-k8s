@@ -54,8 +54,5 @@ jobs:
         chart: '${{ env.CHART_NAME }}'
         token: '${{ github.token }}'
       env:
-        KUBECONFIG_FILE: '${{ secrets.KUBECONFIG }}' 
+        KUBECONFIG_FILE: '${{ secrets.KUBECONFIG }}'
 
-
-
-        
