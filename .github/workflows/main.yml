@@ -19,7 +19,6 @@ env:
   RELEASE_NAME: 'otus-maas' 
   NAMESPACE: 'otus-maas'
   CHART_NAME: 'helm/otus-maas'
-  
 
 jobs:
   build:
