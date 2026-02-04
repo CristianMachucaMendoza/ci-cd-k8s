@@ -20,6 +20,8 @@ env:
   NAMESPACE: 'otus-maas'
   CHART_NAME: 'helm/otus-maas'
 
+  
+
 jobs:
   build:
     runs-on: ubuntu-latest
