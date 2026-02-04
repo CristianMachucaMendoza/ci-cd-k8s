@@ -7,9 +7,13 @@
 https://github.com/CristianMachucaMendoza/ci-cd-k8s/blob/k8s/src/app.py
 
 
+
 ## 2.  Настроить CI/CD пайплайн в GitHub Actions с тестами вашей модели. В случае успешного прохождения тестов настройте CI/CD для автоматической сборки docker образа и его публикацией в registry.
 
 https://github.com/CristianMachucaMendoza/ci-cd-k8s/blob/k8s/.github/workflows/main.yml
+https://github.com/CristianMachucaMendoza/ci-cd-k8s/blob/k8s/tests/test_model.py
+
+
 ![alt text](docs/test.png)
 ![alt text](docs/test_model.png)
 
