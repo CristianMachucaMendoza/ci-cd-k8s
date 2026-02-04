@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: nickosipov/otus-maas:0.0.2
+        image: kristianmachuka/otus-maas:0.0.3
         ports:
         - containerPort: 8000
         resources:

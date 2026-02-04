@@ -48,8 +48,8 @@ run-prod:
 		otus-maas:prod
 
 push-prod:
-	docker tag otus-maas:prod nickosipov/otus-maas:${IMAGE_TAG}
-	docker push nickosipov/otus-maas:${IMAGE_TAG}
+	docker tag otus-maas:prod kristianmachuka/otus-maas:${IMAGE_TAG}
+	docker push kristianmachuka/otus-maas:${IMAGE_TAG}
 
 helm-install-ingress:
 	helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
