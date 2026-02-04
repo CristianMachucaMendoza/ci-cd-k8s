@@ -33,7 +33,7 @@ def health_check() -> dict:
     return {"status": "ok"}
 
 
-@app.post("/predicts")
+@app.post("/prediction-service")
 def make_prediction(features: IrisFeatures) -> dict:
     """Make a prediction by model"""
     logger.info(f"Making prediction for: {features}")
