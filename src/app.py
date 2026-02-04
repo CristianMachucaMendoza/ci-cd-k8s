@@ -33,7 +33,7 @@ def health_check() -> dict:
     return {"status": "ok"}
 
 
-@app.post("/predict")
+@app.post("/predicts")
 def make_prediction(features: IrisFeatures) -> dict:
     """Make a prediction by model"""
     logger.info(f"Making prediction for: {features}")
@@ -49,7 +49,7 @@ def make_prediction(features: IrisFeatures) -> dict:
             detail="An error occurred during prediction"
         )
     
-    return {"pred-class": pred_class}
+    return {"prediction": pred_class}
 
 # {
 #     "sepal_length": 5.1,
