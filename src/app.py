@@ -33,14 +33,14 @@ def health_check() -> dict:
     return {"status": "ok"}
 
 
-@app.post("/predict")
+@app.post("/predicts")
 def make_prediction(features: IrisFeatures) -> dict:
     """Make a prediction by model"""
     logger.info(f"Making prediction for: {features}")
     try:
         data = pd.DataFrame([features.model_dump()])
         prediction = predict(MODEL, data)
-        classes = ["setosa", "versicolor", "virginica"]
+        classes = ["Setosa", "Versicolor", "Virginica"]
         pred_class = classes[prediction[0]]
     except Exception as e:
         logger.error(f"Prediction error: {e}")
