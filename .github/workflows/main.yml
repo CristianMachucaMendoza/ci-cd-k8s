@@ -42,10 +42,10 @@ jobs:
           
       - name: Run Model Tests
         run: |
-          # Setting PYTHONPATH ensures 'src' is importable
           PYTHONPATH=. pytest tests/test_model.py
 
   build:
+    needs: test
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
