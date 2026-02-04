@@ -10,7 +10,7 @@ env:
   DOCKER_HUB_USER: ${{ secrets.DOCKER_HUB_USER }}
   DOCKER_HUB_REPOSITORY: ${{ secrets.DOCKER_HUB_REPOSITORY }}
   DOCKER_HUB_ACCESS_TOKEN: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
-  IMAGE_NAME: ${{ secrets.DOCKER_HUB_USER }}/${{ secrets.DOCKER_HUB_REPOSITORY }}:0.0.3
+  IMAGE_NAME: ${{ secrets.DOCKER_HUB_USER }}/${{ secrets.DOCKER_HUB_REPOSITORY }}:latest
   CONTAINER_NAME: ${{ secrets.CONTAINER_NAME }}
   SERVER_HOST: ${{ secrets.SERVER_HOST }}
   SERVER_USER: ${{ secrets.SERVER_USER }}
@@ -20,7 +20,7 @@ env:
   NAMESPACE: 'otus-maas'
   CHART_NAME: 'helm/otus-maas'
   
-  
+
 jobs:
   build:
     runs-on: ubuntu-latest
