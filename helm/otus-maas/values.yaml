@@ -3,7 +3,7 @@ namespace: otus-maas
 
 image:
   repository: kristianmachuka/otus-maas
-  tag: "0.0.3"
+  tag: "latest"
   pullPolicy: Always
 
 service:
