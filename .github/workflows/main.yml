@@ -39,6 +39,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install pytest httpx fastapi pandas joblib scikit-learn loguru
+      
+      - name: Train Model
+        run: |
+          PYTHONPATH=. python src/pipeline.py
           
       - name: Run Model Tests
         run: |
